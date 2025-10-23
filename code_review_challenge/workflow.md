@@ -201,11 +201,11 @@ Reject the task from being created
 ```
 
 ## 1 - Add test implementation
-Result: Failed -> pytest doesn't exist\n
+Result: Failed -> pytest doesn't exist\
 Action: Import pytest
 
 ## 2 - Import pytest
-Result: Failed -> No Exception raised\n
+Result: Failed -> No Exception raised\
 Action: Raise exception when task type is not string
 
 ## 3 - Raise exception when task type is not string
