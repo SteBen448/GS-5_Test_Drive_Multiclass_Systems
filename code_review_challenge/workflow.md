@@ -8,15 +8,15 @@ I want to initialize a list
 # NB: When a test passes, a number in brackets will show how many have passed in total. 
 
 # 1 - Add test implementation 
-Result: Failed -> "TodoList" doesn't exist
+Result: Failed -> "TodoList" doesn't exist\n
 Action: Import "TodoList"
 
 # 2 - Import "TodoList"
-Result: Failed -> "TodoList" object has no attribute "todo_list" 
+Result: Failed -> "TodoList" object has no attribute "todo_list"\n
 Action: Add attribute "todo_list"
 
 # 3 - Add Attribute "todo_list"
-Result: Failed -> None =/= [] 
+Result: Failed -> None =/= []\n
 Action: Initialize attribute todo_list = []
 
 # 4 - Initialize attribute "todo_list" = []
@@ -31,31 +31,31 @@ Add an instance of Todo to the list
 ```
 
 # 1 - Add test implementation 
-Result: Failed -> "Todo" doesn't exist
+Result: Failed -> "Todo" doesn't exist\n
 Action: Import "Todo" from lib.todo
 
 # 2 - Import "Todo" from lib.todo
-Result: Failed -> [] =/= [{"task": "Do groceries", "complete": False}]
+Result: Failed -> [] =/= [{"task": "Do groceries", "complete": False}]\n
 Action: Append Todo to todo_list
 
 # 3 - Append Todo to todo_list
-Result: Failed -> "Todo" object has no attribute "task"
+Result: Failed -> "Todo" object has no attribute "task"\n
 Action: Add "task" attribute and set to required string
 
 # 4 - Add "task" attribute to "Todo" and set to required string 
-Result: Failed -> "Todo" object has no attribute "complete"
+Result: Failed -> "Todo" object has no attribute "complete"\n
 Action: Add "complete" attribute and set to False
 
 # 5 - Add "complete" attribute to "Todo" and set to False 
-Result: Test Passed (2)
+Result: Test Passed (2)\n
 Action: Add second test case with multiple unique values
 
 # 6 - Add second test case with multiple unique values
-Result: Failed -> Second value missing
+Result: Failed -> Second value missing\n
 Action: Replace required string with new string
 
 # 7 - Replace required string with new string
-Result: Test Passed, however the previous test failed -> Second value is extra
+Result: Test Passed, however the previous test failed -> Second value is extra\n
 Action: Replace required string with passed in parameter
 
 # 8 - Replace required string with passed in parameter
@@ -70,23 +70,23 @@ Show a list of todos where complete is False
 ```
 
 # 1 - Add test implementation
-Result: Failed -> None =/= [list of four todo dictionaries]
+Result: Failed -> None =/= [list of four todo dictionaries]\n
 Action: Return required list of todos
 
 # 2 - Return required list of todos
-Result: Test Passed (4)
+Result: Test Passed (4)\n
 Action: Add second test case implementation
 
 # 3 - Add second test case implementation
-Result: Failed -> [list of four todo dictionaries] =/= [list of three todo dictionaries]
+Result: Failed -> [list of four todo dictionaries] =/= [list of three todo dictionaries]\n
 Action: Set incomplete() to return the required list
 
 # 4 - Set incomplete() to return the required list
-Result: Test Passed, however previous test failed -> [three todo dictionaries] =/= [four todo dictionaries]
+Result: Test Passed, however previous test failed -> [three todo dictionaries] =/= [four todo dictionaries]\n
 Action: Have incomplete() filter by complete: False in each dictionary
 
 # 5 - Have incomplete() filter by complete: False in each dictionary
-Result: Previous test passed, current test failed -> [four todo dictionaries] =/= [three todo dictionaries]
+Result: Previous test passed, current test failed -> [four todo dictionaries] =/= [three todo dictionaries]\n
 Action: Add implementation for todo.mark_complete()
 
 # 6 - Add implemenation for todo.mark_complete()
@@ -103,23 +103,23 @@ I want to mark a task as completed
 ```
 
 # 6a - Add initializer unit test in todo.py
-Result: Failed -> "Todo" doesn't exist
+Result: Failed -> "Todo" doesn't exist\n
 Action: Import "Todo" class
 
 # 6b - Import "Todo" class
-Result: Test Passed (5)
+Result: Test Passed (5)\n
 Action: Add new test case for marking as complete
 
 # 6c - Add new test case for marking as complete
-Result: Failed -> False =/= True
+Result: Failed -> False =/= True\n
 Action: Set todo.complete = true
 
 # 6d - Set todo.complete = true
-Result: Test Passed (6)
+Result: Test Passed (6)\n
 Action: Re-test # 5 to see if any changes since last attempt
 
 # 7 - Re-test #5 to see if any change from last attempt
-Result: Failed -> [four todo dictionaries] =/= [three todo dictionaries]
+Result: Failed -> [four todo dictionaries] =/= [three todo dictionaries]\n
 Action: Refactor to not use dictionaries
 
 # 8 - Refactor to not use dictionaries
@@ -134,15 +134,15 @@ Show a list of todos where complete is True
 ```
 
 # 1 - Add test implementation
-Result: Failed -> None =/= [four todo objects]
+Result: Failed -> None =/= [four todo objects]\n
 Action: Return the list of todo objects
 
 # 2 - Return the list of todo objects
-Result: Test Passed (8)
+Result: Test Passed (8)\n
 Action: Add second test case implementation
 
 # 3 - Add second test case implementation
-Result: Failed -> Four todo objects =/= Two todo objects
+Result: Failed -> Four todo objects =/= Two todo objects\n
 Action: Add filter for complete todos
 
 # 4 - Add filter for complete todos
@@ -157,15 +157,15 @@ Set up all todos to be completed
 ```
 
 # 1 - Add test implementation
-Result: Failed -> Empty list =/= Four todo objects
+Result: Failed -> Empty list =/= Four todo objects\n
 Action: Set all instances of todo.complete to True
 
 # 2 - Set all instances of todo.complete to True
-Result: Test Passed (10)
+Result: Test Passed (10)\n
 Action: Add second test case implementation
 
 # 3 - Add second test case implementation
-Result: Test Passed (11)
+Result: Test Passed (11)\n
 Action: Refactor existing code to use proper logic
 
 # 4 - Refactor existing code to use proper logic
@@ -180,11 +180,11 @@ Only the first one is added to the list
 ```
 
 # 1 - Add test implementation
-Result: Failed -> pytest doesn't exist
+Result: Failed -> pytest doesn't exist\n
 Action: Import Pytest
 
 # 2 - Import Pytest
-Result: Failed -> No Exception Raised
+Result: Failed -> No Exception Raised\n
 Action: Raise Exception if task is in the list of existing tasks
 
 # 3 - Raise Exception if task is in the list of existing tasks
@@ -198,11 +198,11 @@ Reject the task from being created
 ```
 
 # 1 - Add test implementation
-Result: Failed -> pytest doesn't exist
+Result: Failed -> pytest doesn't exist\n
 Action: Import pytest
 
 # 2 - Import pytest
-Result: Failed -> No Exception raised
+Result: Failed -> No Exception raised\n
 Action: Raise exception when task type is not string
 
 # 3 - Raise exception when task type is not string
