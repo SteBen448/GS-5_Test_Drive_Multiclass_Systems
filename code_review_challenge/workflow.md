@@ -1,5 +1,7 @@
 # WORKFLOW.MD
 
+## NB: When a test passes, a number in brackets will show how many have passed in total. 
+
 ```python
 """
 As a user
@@ -7,7 +9,6 @@ Given I want to track a list of things I need to do
 I want to initialize a list
 """
 ```
-## NB: When a test passes, a number in brackets will show how many have passed in total. 
 
 ## 1 - Add test implementation 
 Result: Failed -> "TodoList" doesn't exist\
